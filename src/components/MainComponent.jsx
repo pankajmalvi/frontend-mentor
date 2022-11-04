@@ -19,7 +19,9 @@ const MainComponent = () => {
 
     return (
         <main>
-            {data.map((d) => <CardComponent title={d.title} description={d.description} key={d.title} />)}
+            <div className="cards">
+                {data.map((d) => <CardComponent title={d.title} description={d.description} key={d.title} />)}
+            </div>
         </main>
     )
 }

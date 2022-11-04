@@ -10,11 +10,16 @@ $clr-white: hsla(0, 0%, 100%, 0.75);
 $clr-light-grey: hsl(0, 0%, 95%);
 
 // Font
-$font-primary: "Big Shoulders Display", cursive;
-$font-seconday: "Lexend Deca", sans-serif;
+$font-secondary: "Big Shoulders Display", cursive;
+$font-primary: "Lexend Deca", sans-serif;
 
 $font-wght-bold: 700;
 $font-wght-normal: 400;
+$border-radius: 10px;
+$border-radius-right: 0 $border-radius $border-radius 0;
+$border-radius-left: $border-radius 0 0 $border-radius;
+$border-radius-top: $border-radius $border-radius 0 0;
+$border-radius-bottom: 0 0 $border-radius $border-radius;
 
 * {
   box-sizing: border-box;
@@ -34,18 +39,96 @@ body,
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
-
+body {
+  font-size: 15px;
+}
 main {
   flex: auto;
+  .cards {
+    font-family: $font-primary;
+    margin: auto;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    border-radius: $border-radius;
+
+    .card-container:nth-of-type(1) {
+      background-color: $clr-primary-orange;
+      border-radius: $border-radius-left;
+      .card-button {
+        color: $clr-primary-orange;
+      }
+    }
+    .card-container:nth-of-type(2) {
+      background-color: $clr-primary-cyan;
+      .card-button {
+        color: $clr-primary-cyan;
+      }
+    }
+    .card-container:nth-of-type(3) {
+      background-color: $clr-primary-cyan-dark;
+      border-radius: $border-radius-right;
+      .card-button {
+        color: $clr-primary-cyan-dark;
+      }
+    }
+
+    .card-container {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      color: $clr-light-grey;
+      justify-content: space-between;
+      padding: 2.5rem 2rem;
+      height: fit-content;
+      gap: 1.5rem;
+      height: 70%;
+      .card-title {
+        text-transform: uppercase;
+        font-family: $font-secondary;
+        font-size: 2rem;
+      }
+
+      .card-description {
+        height: 40%;
+        font-weight: $font-wght-normal;
+      }
+
+      .card-button {
+        border-radius: 25px;
+        width: 9rem;
+        &:hover {
+          background-color: transparent;
+          color: $clr-light-grey;
+          border: 2px solid $clr-light-grey;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .cards {
+      flex-direction: column;
+      width: 100%;
+      .card-container:nth-of-type(1) {
+        border-radius: $border-radius-top;
+      }
+
+      .card-container:nth-of-type(3) {
+        border-radius: $border-radius-bottom;
+      }
+    }
+  }
 }
 
 footer {
+  margin-inline: auto;
   height: 50px;
+  width: 100%;
+  text-align: center;
   .attribution {
     font-size: 11px;
-    text-align: center;
   }
   .attribution a {
     color: hsl(228, 45%, 44%);
