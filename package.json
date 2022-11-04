@@ -1,0 +1,19 @@
+{
+  "name": "frontend-mentor",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "frontend-mentor"
+  },
+  "keywords": [
+    "Frontend",
+    "Mentor"
+  ],
+  "author": "Pankaj Malviya",
+  "license": "ISC"
+}
