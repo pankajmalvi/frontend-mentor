@@ -6,7 +6,9 @@ function App() {
 
   return (
     <div className="App">
-      <ProductPreviewCard />
+      <main>
+        <ProductPreviewCard />
+      </main>
       <FooterFrontendMentor name={"Pankaj Malviya"} />
     </div>
   )
