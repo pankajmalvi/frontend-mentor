@@ -1,0 +1,80 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+// Variables
+$clr-primary-blue: hsl(215, 51%, 70%);
+$cle-primary-cyan: hsl(178, 100%, 50%);
+
+$clr-blue-main-BG: hsl(217, 54%, 11%);
+$clr-blue-card-BG: hsl(216, 50%, 16%);
+$clr-blue-line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+// Font
+// - Font size (paragraph): 18px
+$font-primary: "Outfit", sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-primary;
+}
+
+main {
+  flex: auto;
+
+  .card-container {
+    .image-container {
+      img {
+      }
+    }
+
+    .card-content {
+      .nft-heading {
+      }
+
+      .nft-description {
+      }
+
+      .card-price-notice {
+        .card-price {
+        }
+        .card-notice {
+        }
+      }
+
+      .card-footer {
+        img {
+        }
+
+        .user {
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 50px;
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
