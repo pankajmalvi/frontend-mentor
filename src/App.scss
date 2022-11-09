@@ -3,7 +3,7 @@
 
 // Variables
 $clr-primary-blue: hsl(215, 51%, 70%);
-$cle-primary-cyan: hsl(178, 100%, 50%);
+$clr-primary-cyan: hsl(178, 100%, 50%);
 
 $clr-blue-main-BG: hsl(217, 54%, 11%);
 $clr-blue-card-BG: hsl(216, 50%, 16%);
@@ -14,6 +14,7 @@ $white: hsl(0, 0%, 100%);
 // - Font size (paragraph): 18px
 $font-primary: "Outfit", sans-serif;
 
+$border-radius: 10px;
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,8 +28,13 @@ html,
   height: 100%;
 }
 
+body {
+  background-color: $clr-blue-main-BG;
+}
+
 .App {
-  height: 100%;
+  width: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   font-family: $font-primary;
@@ -36,32 +42,64 @@ html,
 
 main {
   flex: auto;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
 
   .card-container {
+    border-radius: $border-radius;
+    padding: 1rem;
+    background-color: $clr-blue-card-BG;
+    color: $white;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     .image-container {
       img {
+        width: 100%;
+        border-radius: $border-radius;
       }
     }
 
     .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       .nft-heading {
       }
 
       .nft-description {
+        color: $clr-blue-line;
       }
 
       .card-price-notice {
+        display: flex;
+        justify-content: space-between;
         .card-price {
+          color: $clr-primary-cyan;
         }
         .card-notice {
+          color: $clr-blue-line;
         }
       }
 
       .card-footer {
+        display: flex;
+        gap: 12px;
+        border-top: 1px solid $clr-blue-line;
+        color: $clr-blue-line;
+        align-items: center;
+        padding: 1rem 0;
         img {
+          width: 30px;
+          border: 1px solid $white;
+          border-radius: 50%;
         }
 
         .user {
+          color: $white;
         }
       }
     }
@@ -69,11 +107,15 @@ main {
 }
 
 footer {
+  width: 100%;
   height: 50px;
+  color: $white;
+  text-align: center;
+
   .attribution {
     font-size: 11px;
-    text-align: center;
   }
+
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
