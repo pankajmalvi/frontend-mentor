@@ -1,9 +1,10 @@
 import React from 'react'
+import SectionHero from './SectionHero'
 
 const Main = () => {
     return (
         <main>
-            Add your Component here
+            <SectionHero />
         </main>
     )
 }

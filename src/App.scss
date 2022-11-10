@@ -1,7 +1,28 @@
 // Imports
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
 // Variables
-$font-primary: Arial, Helvetica, sans-serif;
+
+// Colors
+$clr-desaturated-red: hsl(0, 36%, 70%);
+$clr-soft-red: hsl(0, 93%, 68%);
+
+$dark-grayish-red: hsl(0, 6%, 24%);
+
+// Gradients
+$gradient-clr-1: hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+$gradient-clr-2: hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+
+// Mixin for Gradient
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);
+}
+// @include gradient(135deg, $gradient-clr-2);
+
+$font-primary: "Josefin Sans", sans-serif;
 
 * {
   box-sizing: border-box;
@@ -29,6 +50,20 @@ main {
   display: grid;
   place-items: center;
   width: 100%;
+
+  .hero-section {
+    .hero-heading {
+    }
+
+    .hero-description {
+    }
+    form {
+      input {
+      }
+      button {
+      }
+    }
+  }
 }
 
 footer {
