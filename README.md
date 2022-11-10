@@ -5,8 +5,8 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/pankajmalvi/frontend-mentor/tree/brance-name)
-- Live Site URL: [Live Site](https://domain.netlify.app/)
+- Solution URL: [Solution](https://github.com/pankajmalvi/frontend-mentor/tree/base-apparel)
+- Live Site URL: [Live Site](https://base-apparel-pm.netlify.app/)
 
 ### Built with
 
