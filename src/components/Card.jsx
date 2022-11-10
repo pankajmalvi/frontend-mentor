@@ -28,7 +28,9 @@ const Card = ({ cardDetails }) => {
                 </div>
                 <div className="card-footer">
                     <img src={avatar} alt="User Icon" />
-                    Creation of <p className='user'>{createdBy && `Jules Wyvern`}</p>
+                    <p className='user-description'>
+                        Creation of <span className='user'>{createdBy && `Jules Wyvern`}</span>
+                    </p>
                 </div>
             </div>
         </div>

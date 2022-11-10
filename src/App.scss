@@ -4,6 +4,7 @@
 // Variables
 $clr-primary-blue: hsl(215, 51%, 70%);
 $clr-primary-cyan: hsl(178, 100%, 50%);
+$clr-primary-cyan-transparent: hsla(178, 100%, 50%, 0.321);
 
 $clr-blue-main-BG: hsl(217, 54%, 11%);
 $clr-blue-card-BG: hsl(216, 50%, 16%);
@@ -44,7 +45,7 @@ main {
   flex: auto;
   display: grid;
   place-items: center;
-  font-size: 18px;
+  width: 100%;
 
   .card-container {
     border-radius: $border-radius;
@@ -52,36 +53,86 @@ main {
     background-color: $clr-blue-card-BG;
     color: $white;
     width: 300px;
-    height: 500px;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: $clr-primary-blue;
+
+    @media screen and (max-width: 768px) {
+      height: fit-content;
+      margin: 1rem auto;
+    }
+
     .image-container {
+      position: relative;
+
       img {
         width: 100%;
         border-radius: $border-radius;
       }
+
+      &::before {
+        content: "";
+        background: $clr-primary-cyan-transparent
+          url("./assets/images/icon-view.svg") no-repeat;
+        background-size: 1.5rem;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: grid;
+        place-items: center;
+        font-size: 14px;
+        border-radius: $border-radius;
+        display: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+        &::before {
+          display: grid;
+        }
+      }
     }
 
     .card-content {
+      @media screen and (max-width: 768px) {
+        justify-content: space-evenly;
+        height: 60%;
+      }
       display: flex;
       flex-direction: column;
       gap: 10px;
+      justify-content: space-between;
+
       .nft-heading {
+        color: $white;
+        &:hover {
+          cursor: pointer;
+          color: $clr-primary-cyan;
+        }
       }
 
       .nft-description {
-        color: $clr-blue-line;
+        color: $clr-primary-blue;
       }
 
       .card-price-notice {
         display: flex;
         justify-content: space-between;
+
+        * {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+        }
+
         .card-price {
           color: $clr-primary-cyan;
+          font-size: 0.875rem;
         }
         .card-notice {
-          color: $clr-blue-line;
         }
       }
 
@@ -89,7 +140,6 @@ main {
         display: flex;
         gap: 12px;
         border-top: 1px solid $clr-blue-line;
-        color: $clr-blue-line;
         align-items: center;
         padding: 1rem 0;
         img {
@@ -100,23 +150,29 @@ main {
 
         .user {
           color: $white;
+          &:hover {
+            cursor: pointer;
+            color: $clr-primary-cyan;
+          }
         }
       }
     }
   }
 }
 
-footer {
+footer.attribution {
   width: 100%;
   height: 50px;
-  color: $white;
+  color: $clr-primary-blue;
   text-align: center;
+  font-size: 0.875rem;
 
-  .attribution {
-    font-size: 11px;
-  }
+  a {
+    color: $white;
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+    &:hover {
+      cursor: pointer;
+      color: $clr-primary-cyan;
+    }
   }
 }
