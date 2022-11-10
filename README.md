@@ -1,11 +1,11 @@
-// Readme
-# Frontend Mentor - Change from Template 
-Add from Template
+# Frontend Mentor - News homepage solution
+
+This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/pankajmalvi/frontend-mentor/tree/brance-name)
-- Live Site URL: [Live Site](https://domain.netlify.app/)
+- Solution URL: [Solution](https://github.com/pankajmalvi/frontend-mentor/tree/news-homepage)
+- Live Site URL: [Live Site](https://news-homepage-pm.netlify.app/)
 
 ### Built with
 

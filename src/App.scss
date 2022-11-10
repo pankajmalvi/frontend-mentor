@@ -1,7 +1,19 @@
 // Imports
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 
 // Variables
-$font-primary: Arial, Helvetica, sans-serif;
+
+// Colors
+$clr-primary-soft-orange: hsl(35, 77%, 62%);
+$clr-primary-soft-red: hsl(5, 85%, 63%);
+
+$clr-off-white: hsl(36, 100%, 99%);
+$clr-grayish-blue: hsl(233, 8%, 79%);
+$clr-dark-grayish-blue: hsl(236, 13%, 42%);
+$clr-very-dark-blue: hsl(240, 100%, 5%);
+
+// Font
+$font-primary: "Inter", sans-serif;
 
 * {
   box-sizing: border-box;
