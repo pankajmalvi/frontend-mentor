@@ -89,10 +89,19 @@ main {
   // Heading News Container
   .heading-news-container {
     grid-area: header-news;
+    display: flex;
+    flex-direction: column;
     .news-heading-image {
+      flex: 1;
+      grid-area: image;
+      background: url("./assets/images/image-web-3-desktop.jpg");
     }
 
     .heading-news-content {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
       .news-heading {
       }
 
