@@ -94,7 +94,10 @@ main {
     .news-heading-image {
       flex: 1;
       grid-area: image;
-      background: url("./assets/images/image-web-3-desktop.jpg");
+      background: url("./assets/images/");
+      background: url("./assets/images/image-gaming-growth.jpg");
+      background: url("./assets/images/");
+      background: url("./assets/images/");
     }
 
     .heading-news-content {
@@ -141,16 +144,22 @@ main {
   // Popular News Container
   .popular-news-container {
     grid-area: popular-news;
+    display: flex;
 
     .popular-news-item {
-      // Can change to before/after css
-      .counter {
+      display: flex;
+      .popular-news-image {
       }
-
-      .popular-news-heading {
-      }
-
       .popular-news-content {
+        // Can change to before/after css
+        .counter {
+        }
+
+        .popular-news-heading {
+        }
+
+        .popular-news-description {
+        }
       }
     }
   }

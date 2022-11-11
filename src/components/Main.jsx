@@ -1,5 +1,7 @@
 import React from 'react'
-
+import growthGaming from './../assets/images/image-gaming-growth.jpg'
+import retroPcs from './../assets/images/image-retro-pcs.jpg'
+import topLaptops from './../assets/images/image-top-laptops.jpg'
 const Main = () => {
     return (
         <main>
@@ -58,40 +60,54 @@ const Main = () => {
 
             <div className="popular-news-container">
                 <div className="popular-news-item">
-                    <div className="counter">
-                        01
+                    <div className="popular-news-image">
+                        <img src={retroPcs} alt="Retro PCs" />
                     </div>
-                    <h4 className="popular-news-heading">
-                        Reviving Retro PCs
-                    </h4>
-                    <p className="popular-news-content">
-                        What happens when old PCs are given modern upgrades?
-                    </p>
+                    <div className="popular-news-description">
+                        <div className="counter">
+                            01
+                        </div>
+                        <h4 className="popular-news-heading">
+                            Reviving Retro PCs
+                        </h4>
+                        <p className="popular-news-description">
+                            What happens when old PCs are given modern upgrades?
+                        </p>
+                    </div>
                 </div>
 
                 <div className="popular-news-item">
-                    <div className="counter">
-                        02
+                    <div className="popular-news-image">
+                        <img src={topLaptops} alt="Top Laptops" srcset="" />
                     </div>
-                    <h4 className="popular-news-heading">
-                        Top 10 Laptops of 2022
-                    </h4>
-                    <p className="popular-news-content">
-                        Our best picks for various needs and budgets.
-                    </p>
-
+                    <div className="popular-news-content">
+                        <div className="counter">
+                            02
+                        </div>
+                        <h4 className="popular-news-heading">
+                            Top 10 Laptops of 2022
+                        </h4>
+                        <p className="popular-news-description">
+                            Our best picks for various needs and budgets.
+                        </p>
+                    </div>
                 </div>
 
                 <div className="popular-news-item">
-                    <div className="counter">
-                        03
+                    <div className="popular-news-image">
+                        <img src={growthGaming} alt="Growth of Gaming" />
                     </div>
-                    <h4 className="popular-news-heading">
-                        The Growth of Gaming
-                    </h4>
-                    <p className="popular-news-content">
-                        How the pandemic has sparked fresh opportunities.
-                    </p>
+                    <div className="popular-news-content">
+                        <div className="counter">
+                            03
+                        </div>
+                        <h4 className="popular-news-heading">
+                            The Growth of Gaming
+                        </h4>
+                        <p className="popular-news-content">
+                            How the pandemic has sparked fresh opportunities.
+                        </p>
+                    </div>
                 </div>
             </div>
 
