@@ -44,6 +44,9 @@ body {
   font-family: $font-primary;
   padding: 0 2rem;
   margin-inline: auto;
+  @media screen and (max-width: 768px) {
+    padding: 0 1rem;
+  }
 }
 
 // Header Component Styling
@@ -53,6 +56,9 @@ header.main-header {
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: 768px) {
+    // display: none;
+  }
   .brand-logo {
   }
 
@@ -71,6 +77,7 @@ header.main-header {
         a:visited {
         }
         a:hover {
+          color: $clr-primary-soft-orange;
         }
         a:active {
         }
@@ -93,31 +100,57 @@ main {
     "header-news header-news  new-news"
     "popular-news popular-news popular-news";
 
+  // Small Screens
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   // Heading News Container
   .heading-news-container {
     grid-area: header-news;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    // flex-direction: column;
     gap: $grid-flex-gap;
+    grid-template-areas:
+      "image image"
+      "header-content header-content";
+    grid-template-rows: 50%;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
 
     .news-heading-image {
-      flex: 1;
       grid-area: image;
       background: url("./assets/images/image-web-3-desktop.jpg") no-repeat;
       background-size: cover;
+
+      @media screen and (max-width: 768px) {
+        background: url("./assets/images/image-web-3-mobile.jpg") no-repeat;
+        background-size: cover;
+        height: 300px;
+      }
     }
 
     .heading-news-content {
-      flex: 1;
+      grid-area: header-content;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: $grid-flex-gap;
-
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        flex: 1;
+      }
       .news-heading {
         width: 70%;
         line-height: 2.5rem;
         color: $clr-very-dark-blue;
         font-size: 2.5rem;
+        @media screen and (max-width: 768px) {
+          width: 90%;
+        }
       }
 
       .news-content {
@@ -156,7 +189,11 @@ main {
     flex-direction: column;
     background-color: $clr-very-dark-blue;
     color: $clr-off-white;
-    padding: 1.5rem 1.25rem 0 1.25rem;
+    padding: 1.5rem 1.25rem;
+
+    @media screen and (max-width: 768px) {
+      // display: none;
+    }
 
     .new-news-header {
       color: $clr-primary-soft-orange;
@@ -208,6 +245,11 @@ main {
       background-size: cover;
     }
 
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+
     .popular-news-item {
       display: flex;
       gap: $grid-flex-gap;
@@ -215,6 +257,9 @@ main {
       .popular-news-image {
         height: 100%;
         aspect-ratio: 2 / 3;
+        @media screen and (max-width: 768px) {
+          height: 150px;
+        }
       }
 
       .popular-news-content {
