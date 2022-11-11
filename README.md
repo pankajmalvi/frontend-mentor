@@ -1,11 +1,11 @@
-// Readme
-# Frontend Mentor - Change from Template 
-Add from Template
+# Frontend Mentor - Easybank landing page solution
+
+This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/pankajmalvi/frontend-mentor/tree/brance-name)
-- Live Site URL: [Live Site](https://domain.netlify.app/)
+- Solution URL: [Solution](https://github.com/pankajmalvi/frontend-mentor/tree/easybank-landing-page)
+- Live Site URL: [Live Site](https://easybank-pm.netlify.app/)
 
 ### Built with
 
