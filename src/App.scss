@@ -44,6 +44,56 @@ main {
   display: grid;
   place-items: center;
   width: 100%;
+
+  // Heading News Container
+  .heading-news-container {
+    .news-heading-image {
+    }
+
+    .heading-news-content {
+      .news-heading {
+      }
+
+      .new-content {
+        .head-news-description {
+        }
+
+        .read-more-button {
+        }
+      }
+    }
+  }
+
+  // New News Container
+  .new-news-container {
+    .new-news-header {
+    }
+
+    .new-news-items {
+      .new-item {
+        .new-news-item-heading {
+        }
+
+        .new-news-item-description {
+        }
+      }
+    }
+  }
+
+  // Popular News Container
+  .popular-news-container {
+    .popular-news-item {
+      // Can change to before/after css
+      .counter {
+      }
+
+      .popular-news-heading {
+      }
+
+      .popular-news-content {
+      }
+    }
+  }
 }
 
 footer {

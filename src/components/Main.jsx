@@ -3,24 +3,26 @@ import React from 'react'
 const Main = () => {
     return (
         <main>
-            <div className="news-heading-image">
+            <div className="heading-news-container">
+                <div className="news-heading-image">
 
-            </div>
-            <div className="heading-news-content">
-
-                <h1 className="news-heading">
-                    The Bright Future of Web 3.0?
-                </h1>
-                <div className="news-content">
-                    <p className="head-news-description">
-                        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-                        But is it really fulfilling its promise?
-                    </p>
-                    <button className="read-more-button">
-                        Read more
-                    </button>
+                </div>
+                <div className="heading-news-content">
+                    <h1 className="news-heading">
+                        The Bright Future of Web 3.0?
+                    </h1>
+                    <div className="news-content">
+                        <p className="head-news-description">
+                            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+                            But is it really fulfilling its promise?
+                        </p>
+                        <button className="read-more-button">
+                            Read more
+                        </button>
+                    </div>
                 </div>
             </div>
+
             <div className="new-news-container">
                 <header className="new-news-header">
                     New
