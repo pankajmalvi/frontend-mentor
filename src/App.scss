@@ -16,7 +16,8 @@ $clr-very-dark-blue: hsl(240, 100%, 5%);
 $font-primary: "Inter", sans-serif;
 
 // Grid
-$grid-flex-gap: 1rem;
+$grid-flex-gap: 1.5rem;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,7 +32,8 @@ html,
 }
 
 body {
-  counter-reset: section;
+  counter-reset: popular-counter;
+  font-size: 15px;
 }
 
 .App {
@@ -87,7 +89,8 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "header-news header-news  new-news"
-    "header-news header-news  new-news" "header-news header-news  new-news"
+    "header-news header-news  new-news"
+    "header-news header-news  new-news"
     "popular-news popular-news popular-news";
 
   // Heading News Container
@@ -111,13 +114,36 @@ main {
       gap: $grid-flex-gap;
 
       .news-heading {
+        width: 70%;
+        line-height: 2.5rem;
+        color: $clr-very-dark-blue;
+        font-size: 2.5rem;
       }
 
-      .new-content {
+      .news-content {
+        display: flex;
+        flex-direction: column;
+        gap: $grid-flex-gap;
         .head-news-description {
+          color: $clr-dark-grayish-blue;
         }
 
         .read-more-button {
+          text-transform: uppercase;
+          padding: 0.75rem 1.25rem;
+          border-radius: 0;
+          background-color: $clr-primary-soft-red;
+          color: $clr-off-white;
+          width: fit-content;
+          font-weight: 400;
+          font-size: 0.75rem;
+          letter-spacing: 2px;
+          outline: none;
+          border: 0;
+
+          &:hover {
+            background-color: $clr-very-dark-blue;
+          }
         }
       }
     }
@@ -130,17 +156,16 @@ main {
     flex-direction: column;
     background-color: $clr-very-dark-blue;
     color: $clr-off-white;
-    padding: 1.5rem 0.875rem;
-    gap: $grid-flex-gap;
+    padding: 1.5rem 1.25rem 0 1.25rem;
 
     .new-news-header {
       color: $clr-primary-soft-orange;
+      font-size: 1.25rem;
     }
 
     .new-news-items {
       display: flex;
       flex-direction: column;
-      gap: $grid-flex-gap;
 
       .new-item {
         padding: 1rem 0;
@@ -194,8 +219,8 @@ main {
         gap: 0.5rem;
 
         &::before {
-          counter-increment: section;
-          content: "0" counter(section);
+          counter-increment: popular-counter;
+          content: "0" counter(popular-counter);
           color: $clr-grayish-blue;
           font-weight: 800;
           font-size: 1.5rem;
