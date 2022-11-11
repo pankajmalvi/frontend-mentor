@@ -28,37 +28,68 @@ const Main = () => {
 
                 <div className="new-news-items">
                     <div className="new-item">
-                        Hydrogen VS Electric Cars
-                        Will hydrogen-fueled cars ever catch up to EVs?
+                        <h3 className="new-news-item-heading">
+                            Hydrogen VS Electric Cars
+                        </h3>
+                        <p className="new-news-item-description">
+                            Will hydrogen-fueled cars ever catch up to EVs?
+                        </p>
                     </div>
                     <div className="new-item">
-                        The Downsides of AI Artistry
-                        What are the possible adverse effects of on-demand AI image generation?
+                        <h3 className="new-news-item-heading">
+                            The Downsides of AI Artistry
+                        </h3>
+                        <p className="new-news-item-description">
+                            What are the possible adverse effects of on-demand AI image generation?
+                        </p>
                     </div>
                     <div className="new-item">
-                        Is VC Funding Drying Up?
-                        Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                        <h3 className="new-news-item-heading">
+                            Is VC Funding Drying Up?
+                        </h3>
+                        <p className="new-news-item-description">
+                            Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                        </p>
                     </div>
                 </div>
             </div>
 
             <div className="popular-news-items">
                 <div className="popular-news-item">
-                    01
-                    Reviving Retro PCs
-                    What happens when old PCs are given modern upgrades?
+                    <div className="counter">
+                        01
+                    </div>
+                    <h4 className="popular-news-heading">
+                        Reviving Retro PCs
+                    </h4>
+                    <p className="popular-news-content">
+                        What happens when old PCs are given modern upgrades?
+                    </p>
                 </div>
 
                 <div className="popular-news-item">
-                    02
-                    Top 10 Laptops of 2022
-                    Our best picks for various needs and budgets.
+                    <div className="counter">
+                        02
+                    </div>
+                    <h4 className="popular-news-heading">
+                        Top 10 Laptops of 2022
+                    </h4>
+                    <p className="popular-news-content">
+                        Our best picks for various needs and budgets.
+                    </p>
+
                 </div>
 
                 <div className="popular-news-item">
-                    03
-                    The Growth of Gaming
-                    How the pandemic has sparked fresh opportunities.
+                    <div className="counter">
+                        03
+                    </div>
+                    <h4 className="popular-news-heading">
+                        The Growth of Gaming
+                    </h4>
+                    <p className="popular-news-content">
+                        How the pandemic has sparked fresh opportunities.
+                    </p>
                 </div>
             </div>
 
