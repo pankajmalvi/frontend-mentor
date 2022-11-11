@@ -37,16 +37,39 @@ html,
   display: flex;
   flex-direction: column;
   font-family: $font-primary;
+  padding: 0 2rem;
 }
 
 // Header Component Styling
 header.main-header {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+
   .brand-logo {
   }
 
   .nav-items {
     ul {
+      display: flex;
+      list-style: none;
+      text-decoration: none;
+      gap: 2rem;
       li {
+        a {
+          color: $clr-dark-grayish-blue;
+        }
+        a:link {
+        }
+        a:visited {
+        }
+        a:hover {
+        }
+        a:active {
+        }
       }
     }
   }
