@@ -63,12 +63,8 @@ const Main = () => {
             <div className="popular-news-container">
                 <div className="popular-news-item">
                     <div className="popular-news-image">
-                        <img src={retroPcs} alt="Retro PCs" />
                     </div>
-                    <div className="popular-news-description">
-                        <div className="counter">
-                            01
-                        </div>
+                    <div className="popular-news-content">
                         <h4 className="popular-news-heading">
                             Reviving Retro PCs
                         </h4>
@@ -80,12 +76,8 @@ const Main = () => {
 
                 <div className="popular-news-item">
                     <div className="popular-news-image">
-                        <img src={topLaptops} alt="Top Laptops" srcset="" />
                     </div>
                     <div className="popular-news-content">
-                        <div className="counter">
-                            02
-                        </div>
                         <h4 className="popular-news-heading">
                             Top 10 Laptops of 2022
                         </h4>
@@ -97,16 +89,12 @@ const Main = () => {
 
                 <div className="popular-news-item">
                     <div className="popular-news-image">
-                        <img src={growthGaming} alt="Growth of Gaming" />
                     </div>
                     <div className="popular-news-content">
-                        <div className="counter">
-                            03
-                        </div>
                         <h4 className="popular-news-heading">
                             The Growth of Gaming
                         </h4>
-                        <p className="popular-news-content">
+                        <p className="popular-news-description">
                             How the pandemic has sparked fresh opportunities.
                         </p>
                     </div>

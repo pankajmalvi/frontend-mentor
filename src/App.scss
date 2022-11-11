@@ -30,6 +30,10 @@ html,
   min-height: 100%;
 }
 
+body {
+  counter-reset: section;
+}
+
 .App {
   width: 100%;
   max-width: 1080px;
@@ -158,24 +162,52 @@ main {
   // Popular News Container
   .popular-news-container {
     grid-area: popular-news;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: $grid-flex-gap;
+
+    .popular-news-item:nth-of-type(1) .popular-news-image {
+      background: url("./assets/images/image-retro-pcs.jpg") no-repeat;
+      background-size: cover;
+    }
+    .popular-news-item:nth-of-type(2) .popular-news-image {
+      background: url("./assets/images/image-top-laptops.jpg") no-repeat;
+      background-size: cover;
+    }
+    .popular-news-item:nth-of-type(3) .popular-news-image {
+      background: url("./assets/images/image-gaming-growth.jpg") no-repeat;
+      background-size: cover;
+    }
 
     .popular-news-item {
       display: flex;
       gap: $grid-flex-gap;
 
       .popular-news-image {
+        height: 100%;
+        aspect-ratio: 2 / 3;
       }
+
       .popular-news-content {
-        // Can change to before/after css
-        .counter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &::before {
+          counter-increment: section;
+          content: "0" counter(section);
+          color: $clr-grayish-blue;
+          font-weight: 800;
+          font-size: 1.5rem;
         }
 
         .popular-news-heading {
+          color: $clr-very-dark-blue;
         }
 
         .popular-news-description {
+          font-size: 0.875rem;
+          color: $clr-dark-grayish-blue;
         }
       }
     }
@@ -183,6 +215,8 @@ main {
 }
 
 footer {
+  padding: 1rem;
+
   .attribution {
     font-size: 11px;
     text-align: center;
