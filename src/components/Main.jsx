@@ -56,7 +56,7 @@ const Main = () => {
                 </div>
             </div>
 
-            <div className="popular-news-items">
+            <div className="popular-news-container">
                 <div className="popular-news-item">
                     <div className="counter">
                         01

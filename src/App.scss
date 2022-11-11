@@ -39,6 +39,20 @@ html,
   font-family: $font-primary;
 }
 
+// Header Component Styling
+header.main-header {
+  .brand-logo {
+  }
+
+  .nav-items {
+    ul {
+      li {
+      }
+    }
+  }
+}
+
+// Main Component Styling
 main {
   flex: auto;
   display: grid;
