@@ -34,17 +34,17 @@ html,
 .App {
   width: 100%;
   min-height: 100%;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   font-family: $font-primary;
   padding: 0 2rem;
+  margin-inline: auto;
 }
 
 // Header Component Styling
 header.main-header {
   width: 100%;
-  max-width: 1280px;
-  margin-inline: auto;
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
@@ -118,11 +118,16 @@ main {
   // New News Container
   .new-news-container {
     grid-area: new-news;
+    display: flex;
+    flex-direction: column;
 
     .new-news-header {
     }
 
     .new-news-items {
+      display: flex;
+      flex-direction: column;
+
       .new-item {
         .new-news-item-heading {
         }
