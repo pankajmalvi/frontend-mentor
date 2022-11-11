@@ -1,8 +1,4 @@
 import React from 'react'
-import growthGaming from './../assets/images/image-gaming-growth.jpg'
-import retroPcs from './../assets/images/image-retro-pcs.jpg'
-import topLaptops from './../assets/images/image-top-laptops.jpg'
-
 
 const Main = () => {
     return (
