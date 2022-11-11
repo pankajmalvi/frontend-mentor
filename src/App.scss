@@ -16,8 +16,7 @@ $clr-very-dark-blue: hsl(240, 100%, 5%);
 $font-primary: "Inter", sans-serif;
 
 // Grid
-$grid-gap: 1rem;
-
+$grid-flex-gap: 1rem;
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,13 +27,12 @@ body,
 html,
 #root {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 
 .App {
   width: 100%;
-  min-height: 100%;
-  max-width: 1280px;
+  max-width: 1080px;
   display: flex;
   flex-direction: column;
   font-family: $font-primary;
@@ -79,7 +77,9 @@ header.main-header {
 main {
   flex: auto;
   display: grid;
+  gap: $grid-flex-gap;
   width: 100%;
+  height: 100%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "header-news header-news  new-news"
@@ -91,19 +91,20 @@ main {
     grid-area: header-news;
     display: flex;
     flex-direction: column;
+    gap: $grid-flex-gap;
+
     .news-heading-image {
       flex: 1;
       grid-area: image;
-      background: url("./assets/images/");
-      background: url("./assets/images/image-gaming-growth.jpg");
-      background: url("./assets/images/");
-      background: url("./assets/images/");
+      background: url("./assets/images/image-web-3-desktop.jpg") no-repeat;
+      background-size: cover;
     }
 
     .heading-news-content {
       flex: 1;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      gap: $grid-flex-gap;
 
       .news-heading {
       }
@@ -123,19 +124,32 @@ main {
     grid-area: new-news;
     display: flex;
     flex-direction: column;
+    background-color: $clr-very-dark-blue;
+    color: $clr-off-white;
+    padding: 1.5rem 0.875rem;
+    gap: $grid-flex-gap;
 
     .new-news-header {
+      color: $clr-primary-soft-orange;
     }
 
     .new-news-items {
       display: flex;
       flex-direction: column;
+      gap: $grid-flex-gap;
 
       .new-item {
+        padding: 1rem 0;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $clr-grayish-blue;
+        }
         .new-news-item-heading {
         }
 
         .new-news-item-description {
+          font-size: 0.875rem;
+          color: $clr-grayish-blue;
         }
       }
     }
@@ -145,9 +159,12 @@ main {
   .popular-news-container {
     grid-area: popular-news;
     display: flex;
+    gap: $grid-flex-gap;
 
     .popular-news-item {
       display: flex;
+      gap: $grid-flex-gap;
+
       .popular-news-image {
       }
       .popular-news-content {

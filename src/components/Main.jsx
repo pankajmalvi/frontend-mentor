@@ -2,12 +2,13 @@ import React from 'react'
 import growthGaming from './../assets/images/image-gaming-growth.jpg'
 import retroPcs from './../assets/images/image-retro-pcs.jpg'
 import topLaptops from './../assets/images/image-top-laptops.jpg'
+
+
 const Main = () => {
     return (
         <main>
             <div className="heading-news-container">
                 <div className="news-heading-image">
-
                 </div>
                 <div className="heading-news-content">
                     <h1 className="news-heading">
@@ -23,34 +24,35 @@ const Main = () => {
                         </button>
                     </div>
                 </div>
+
             </div>
 
             <div className="new-news-container">
                 <header className="new-news-header">
-                    New
+                    <h2>New</h2>
                 </header>
 
                 <div className="new-news-items">
                     <div className="new-item">
-                        <h3 className="new-news-item-heading">
+                        <h4 className="new-news-item-heading">
                             Hydrogen VS Electric Cars
-                        </h3>
+                        </h4>
                         <p className="new-news-item-description">
                             Will hydrogen-fueled cars ever catch up to EVs?
                         </p>
                     </div>
                     <div className="new-item">
-                        <h3 className="new-news-item-heading">
+                        <h4 className="new-news-item-heading">
                             The Downsides of AI Artistry
-                        </h3>
+                        </h4>
                         <p className="new-news-item-description">
                             What are the possible adverse effects of on-demand AI image generation?
                         </p>
                     </div>
                     <div className="new-item">
-                        <h3 className="new-news-item-heading">
+                        <h4 className="new-news-item-heading">
                             Is VC Funding Drying Up?
-                        </h3>
+                        </h4>
                         <p className="new-news-item-description">
                             Private funding by VC firms is down 50% YOY. We take a look at what that means.
                         </p>
