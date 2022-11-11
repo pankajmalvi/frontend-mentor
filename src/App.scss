@@ -79,11 +79,16 @@ header.main-header {
 main {
   flex: auto;
   display: grid;
-  place-items: center;
   width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header-news header-news  new-news"
+    "header-news header-news  new-news" "header-news header-news  new-news"
+    "popular-news popular-news popular-news";
 
   // Heading News Container
   .heading-news-container {
+    grid-area: header-news;
     .news-heading-image {
     }
 
@@ -103,6 +108,8 @@ main {
 
   // New News Container
   .new-news-container {
+    grid-area: new-news;
+
     .new-news-header {
     }
 
@@ -119,6 +126,8 @@ main {
 
   // Popular News Container
   .popular-news-container {
+    grid-area: popular-news;
+
     .popular-news-item {
       // Can change to before/after css
       .counter {
