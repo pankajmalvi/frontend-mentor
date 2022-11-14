@@ -31,7 +31,7 @@ const Footer = () => {
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
 
-                <div className="footer-other">
+                <div className="footer-copyright">
                     <button className="footer-btn">
                         Request Invite
                     </button>

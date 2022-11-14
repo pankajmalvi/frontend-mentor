@@ -72,7 +72,7 @@ const Main = () => {
 
             <section className="latest-articles">
                 <div className="latest-articles-header">
-                    <h2 className="heading-secondary">
+                    <h2 className="heading-secondary latest-articles-heading">
                         Latest Articles
                     </h2>
                 </div>
