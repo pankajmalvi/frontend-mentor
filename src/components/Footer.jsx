@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="footer">
                 <div className="brand-container">
                     <div className="brand-logo">
-                        <IconLogo />
+                        <IconLogo fill={"#fff"} />
                     </div>
                     <ul className="social-media">
                         <li><a href="#"><IconFacebook /></a></li>
