@@ -1,6 +1,6 @@
 import React from 'react'
 
-const IcoHamburger = () => {
+const IconHamburger = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={24} height={11}>
             <path
@@ -12,4 +12,4 @@ const IcoHamburger = () => {
     )
 }
 
-export default IcoHamburger
+export default IconHamburger

@@ -12,6 +12,10 @@ const Main = () => {
         <main>
             <section className="hero">
                 <div className="hero-container">
+                    <div className="hero-image">
+                        <div className="img-container"></div>
+                    </div>
+
                     <div className="hero-content">
                         <h1 className="hero-heading">
                             Next generation digital banking
@@ -23,9 +27,7 @@ const Main = () => {
                         <button className="hero-btn">Request Invite</button>
                     </div>
 
-                    <div className="hero-image">
-                        <div className="img-container"></div>
-                    </div>
+
                 </div>
             </section>
 
