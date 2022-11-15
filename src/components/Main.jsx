@@ -2,6 +2,10 @@ import React from 'react'
 import IconApi from './IconApi'
 import IconBudgeting from './IconBudgeting'
 import IconOnline from './IconOnline'
+import imgConfetti from './../assets/images/image-confetti.jpg'
+import imgCurrency from './../assets/images/image-currency.jpg'
+import imgPlane from './../assets/images/image-plane.jpg'
+import imgRestaurant from './../assets/images/image-restaurant.jpg'
 
 const Main = () => {
     return (
@@ -90,13 +94,18 @@ const Main = () => {
                     </div>
                     <div className="articles">
                         <div className="article">
-                            <div className="article-image"></div>
+                            <div className="article-image">
+                                <img src={imgCurrency} alt="Currency Image" />
+                            </div>
                             <div className="article-content">
                                 <small className="article-by">
                                     By Claire Robinson
                                 </small>
-                                <p className="article-description">
+                                <h3 className="article-heading">
                                     Receive money in any currency with no fees
+                                </h3>
+                                <p className="article-description">
+
                                     The world is getting smaller and we’re becoming more mobile. So why should you be
                                     forced to only receive money in a single …
                                 </p>
@@ -104,13 +113,18 @@ const Main = () => {
                         </div>
 
                         <div className="article">
-                            <div className="article-image"></div>
+                            <div className="article-image">
+                                <img src={imgRestaurant} alt="Image" />
+                            </div>
                             <div className="article-content">
                                 <small className="article-by">
                                     By Wilson Hutton
                                 </small>
-                                <p className="article-description">
+                                <h3 className="article-heading">
                                     Treat yourself without worrying about money
+                                </h3>
+                                <p className="article-description">
+
                                     Our simple budgeting feature allows you to separate out your spending and set
                                     realistic limits each month. That means you …
                                 </p>
@@ -118,13 +132,18 @@ const Main = () => {
                         </div>
 
                         <div className="article">
-                            <div className="article-image"></div>
+                            <div className="article-image">
+                                <img src={imgPlane} alt="Image" />
+                            </div>
                             <div className="article-content">
                                 <small className="article-by">
                                     By Wilson Hutton
                                 </small>
-                                <p className="article-description">
+                                <h3 className="article-heading">
                                     Take your Easybank card wherever you go
+                                </h3>
+                                <p className="article-description">
+
                                     We want you to enjoy your travels. This is why we don’t charge any fees on purchases
                                     while you’re abroad. We’ll even show you …
                                 </p>
@@ -132,13 +151,20 @@ const Main = () => {
                         </div>
 
                         <div className="article">
-                            <div className="article-image"></div>
+                            <div className="article-image">
+                                <img src={imgConfetti} alt="Image" />
+
+
+                            </div>
                             <div className="article-content">
                                 <small className="article-by">
                                     By Claire Robinson
                                 </small>
-                                <p className="article-description">
+                                <h3 className="article-heading">
                                     Our invite-only Beta accounts are now live!
+                                </h3>
+                                <p className="article-description">
+
                                     After a lot of hard work by the whole team, we’re excited to launch our closed beta.
                                     It’s easy to request an invite through the site ...
                                 </p>
