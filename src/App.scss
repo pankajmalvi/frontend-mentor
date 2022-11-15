@@ -79,14 +79,19 @@ button {
   @include gradient(135deg, $btn-gradient-clrs);
   outline: none;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 // Header/Navbar
 header {
   width: 100%;
-  padding: 1rem;
+  padding: 0 1rem;
   background-color: $clr-white;
-  position: fixed;
+  position: static;
   z-index: 5;
 
   .navbar {
@@ -107,20 +112,20 @@ header {
       gap: 1rem;
 
       li {
+        padding: 1.5rem 0;
+        transition: 0.3 border ease-in-out;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+          border-bottom: 2px solid $clr-lime-green;
+        }
         a {
           color: $clr-grayish-blue;
         }
 
-        a:link {
-        }
-
-        a:visited {
-        }
-
-        a:hover {
-        }
-
+        a:hover,
         a:active {
+          color: $clr-dark-blue;
         }
       }
     }
@@ -248,6 +253,7 @@ main {
       }
     }
   }
+
   section.latest-articles {
     width: 100%;
     background-color: $clr-very-light-gray;
@@ -303,6 +309,11 @@ main {
 
           &-heading {
             font-weight: 400;
+            cursor: pointer;
+
+            &:hover {
+              color: $clr-lime-green;
+            }
           }
 
           &-description {
@@ -341,6 +352,9 @@ footer {
         gap: 1rem;
 
         a {
+          &:hover {
+            fill: $clr-lime-green;
+          }
         }
       }
     }
@@ -354,6 +368,10 @@ footer {
         a {
           color: $clr-grayish-blue;
           font-size: 0.875rem;
+          &:hover,
+          &:active {
+            color: $clr-lime-green;
+          }
         }
       }
     }
@@ -379,7 +397,7 @@ footer {
   .attribution {
     font-size: 11px;
     text-align: center;
-    color: $clr-white;
+    color: $clr-grayish-blue;
   }
 
   .attribution a {
@@ -387,7 +405,7 @@ footer {
 
     &:hover,
     &:active {
-      color: $clr-bright-cyan;
+      color: $clr-white;
     }
   }
 }
